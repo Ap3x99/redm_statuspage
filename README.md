@@ -1,4 +1,4 @@
-<h2 align="center">FiveM Atlassian Statuspage</h2>
+<h2 align="center">RedM Atlassian Statuspage</h2>
 
 <p align="center">
 <a href="https://patreon.com/yeen"><img alt="Patreon" src="https://img.shields.io/badge/patreon-donate?color=F77F6F&labelColor=F96854&logo=patreon&logoColor=ffffff"></a>
@@ -13,23 +13,22 @@
 
 ## About
 
-FiveM Statuspage integrates your [Atlassian Statuspage](statuspage.io)'s incidents to your server's chat, allowing you to notify your server's players when there's an active incident on your or a third-party's Statuspage.  
+RedM Statuspage integrates your Atlassian Statuspage's incidents to your server's chat, allowing you to notify your server's players when there's an active incident on your or a third-party's Statuspage.  
 ![img](https://i.imgur.com/XanQhO0.png)
-![img](https://i.imgur.com/KoCuouE.png)
 
 ## Installation
 
-Clone with Git or [download manually](https://github.com/TFNRP/statuspage/archive/refs/heads/main.zip)
+Clone with Git or download manually
 
 ```bash
-$ git clone https://github.com/TFNRP/statuspage.git
+$ git clone https://github.com/Ap3x99/redm_statuspage.git
 ```
 
 Edit the resource `config.lua`, changing `'mypage.statuspage.io'` to your own Statuspage.  
 Start the resource in your `server.cfg`  
 
 ```cfg
-ensure statuspage
+ensure redm_statuspage
 ```
 
 ## Configuration
