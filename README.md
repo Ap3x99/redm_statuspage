@@ -14,7 +14,7 @@
 ## About
 
 RedM Statuspage integrates your Atlassian Statuspage's incidents to your server's chat, allowing you to notify your server's players when there's an active incident on your or a third-party's Statuspage.  
-![img](https://i.imgur.com/XanQhO0.png)
+![img](https://imgur.com/a/yobFpC8)
 
 ## Installation
 
