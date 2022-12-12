@@ -1,8 +1,5 @@
--- This is commented out for now until I can add support for VORP notifications
-
---[[
 RegisterNetEvent('statuspage:addIncident', function (status, name, body)
-    ShowNotification('~b~~h~[' .. status:gsub("^%l", string.upper) .. '] ~y~' .. name .. '~n~~r~' .. body)
+    TriggerEvent("vorp:Tip", '~b~~h~[' .. status:gsub("^%l", string.upper) .. '] ~y~' .. name .. '~n~~r~' .. body, 500)
 end)
 
 function ShowNotification(message)
@@ -10,4 +7,3 @@ function ShowNotification(message)
     AddTextComponentSubstringPlayerName(message)
     DrawNotification(true, true)
 end
-]]

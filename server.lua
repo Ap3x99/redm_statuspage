@@ -7,20 +7,8 @@ if type(Config.StatuspageURL) == 'nil' then
     Config.StatuspageURL = {}
 end
 
-if type(Config.RefreshRate) == 'number' then
-    Config.RefreshRate = Config.RefreshRate * 1e3
-end
-
-if type(Config.RefreshRate) == 'nil' then
-    Config.RefreshRate = 6e4
-end
-
 if type(Config.StatuspageURL) ~= 'table' then
     error('Config.StatuspageURL must be type of string or table, got "' .. type(Config.StatuspageURL) .. '"')
-end
-
-if type(Config.RefreshRate) ~= 'number' then
-    error('Config.RefreshRate must be type of number or nil, got "' .. type(Config.RefreshRate) .. '"')
 end
 
 RegisterCommand('statuspage_add', function(source, args, raw)
@@ -31,7 +19,7 @@ end, true)
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(Config.RefreshRate)
+        Citizen.Wait(120*60000)
         for _, page in ipairs(Config.StatuspageURL) do
             local incident = APIFetchLastIncident('https://' .. page .. '/index.json')
             local lastIncident = lastIncidents[page]
